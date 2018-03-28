@@ -5,7 +5,7 @@ ENV LANG C.UTF-8
 
 RUN apt-get update; apt-get install -y \
     openssl \
-	php5
+    php5.6
 
 RUN rm -rf /etc/nginx/conf.d/*; \
     mkdir -p /etc/nginx/external
